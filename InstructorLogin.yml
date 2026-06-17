@@ -1,0 +1,22 @@
+info:
+  name: InstructorLogin
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{base_url}}/auth/login"
+  body:
+    type: json
+    data: |-
+      {
+          "email" : "redikshya.brainztechs+3@gmail.com",
+          "password" : "apple111@A"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
