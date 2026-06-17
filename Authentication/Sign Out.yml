@@ -1,0 +1,17 @@
+info:
+  name: Sign Out
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/users/logout"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODE2ODk4NDEsImluc3RydWN0b3JfcHJvZmlsZV9pZCI6ImJhZmQyMjk1LTIwMGYtNDczNy1iZGUwLWFmMzMwNjYyMGIxNyIsInJvbGVJZCI6IjBkYTFiYTY4LWVhMzYtNGU5Zi1hOThhLTZmYmVlOGRjNmI1YiIsInJvbGVfdHlwZSI6IlJPTEVfSU5TVFJVQ1RPUiIsInNlc3Npb25faWQiOiJmMGE3ZjllOS1jNTg1LTRiNjEtODBmZC0wZTRhYjhhYjdmODYiLCJ1c2VySWQiOiJjYjBkN2IyNy01ZjVhLTQyN2EtOWFhNC0xZjI0YzQ1Y2JjMDYifQ.TJtZZ1Aak22eEaZ9VSMY5PZphjEtg9pjjf6Drkm-94Q
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

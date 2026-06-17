@@ -1,0 +1,30 @@
+info:
+  name: Replace Basic Info
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/instructor/basic-info"
+  body:
+    type: json
+    data: |
+      {
+        "date_of_birth" : "2010-01-01" ,
+        "email" : "redikshya.brainztechs+000@gmail.com",
+        "firstname" : "REDIKSHYA",
+        "lastname" : "PHU",
+        "linkedin" : "https://linkedin.com/in/a",
+        "middlename" : "a", 
+        "phonenumber" : "+9779861517237",
+        "profile_photo_url" :  "users/8549f3c2-2f8a-4450-af59-7abda80da950/profile/45558_five_plus.jpg"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToekn}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

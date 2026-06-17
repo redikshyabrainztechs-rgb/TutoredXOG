@@ -1,0 +1,28 @@
+info:
+  name: Sign Up as Instructor
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/auth/register"
+  body:
+    type: json
+    data: |+
+      {
+        "firstname" : "Ro",
+        "lastname" : "Pe",
+        "email" : "redikshya.brainztechs+9@gmail.com",
+        "password" : "apple111@A",
+        "phone_number" : "+9779861517237",
+        "roletype" : "ROLE_STUDENT"
+      }
+
+
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
