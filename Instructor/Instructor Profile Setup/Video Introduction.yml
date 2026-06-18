@@ -1,0 +1,50 @@
+info:
+  name: Video Introduction
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{baseUrl}}/instructor/instructor-credentials"
+  body:
+    type: json
+    data: |-
+      {
+        "certification": {
+          "certifications": [
+            {
+              "id": "9663fe72-32df-49fc-8268-777e7bfd89ee",
+              "subject": "",
+              "certificate_name": "Certified Conversational English Tutor",
+              "issued_by": "Global Language Training Institute",
+              "from_year": 2026,
+              "certificate_file_url": "/certifications/39657_graduation_of_ram_hari.pdf"
+            }
+          ],
+          "deleted_certificate_ids": []
+        },
+        "education": {
+          "educations": [
+            {
+              "id": "",
+              "university": "",
+              "specialization": "",
+              "degree": "",
+              "from_year": 2026,
+              "to_year": 2026,
+              "degree_certificate_url": ""
+            }
+            
+          ],
+          "deleted_education_ids": []
+        }
+      }
+  auth:
+    type: bearer
+    token: "{{accessToekn}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -10,12 +10,12 @@ http:
     type: json
     data: |+
       {
-        "firstname" : "Ro",
-        "lastname" : "Pe",
-        "email" : "redikshya.brainztechs+9@gmail.com",
+        "firstname" : "Pro",
+        "lastname" : "Gress",
+        "email" : "redikshya.brainztechs+GG@gmail.com",
         "password" : "apple111@A",
         "phone_number" : "+9779861517237",
-        "roletype" : "ROLE_STUDENT"
+        "roletype" : "ROLE_INSTRUCTOR"
       }
 
 

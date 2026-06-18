@@ -1,0 +1,27 @@
+info:
+  name: Replace/PUT Teaching Profile
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/instructor/teaching-profile"
+  body:
+    type: json
+    data: |-
+      {
+        "primary_category": "f8a55085-a805-4795-95d7-7dec59ee360f",
+        "audience_levels": ["beginner", "advanced"],
+        "primary_category" : "f8a55085-a805-4795-95d7-7dec59ee360f", 
+        "session_topics" :  ["880959f8-0790-4abb-9451-ff8f6fb673df", "ee556518-9c39-40f9-a3bc-35ac402991d4"],
+        "years_of_experience" :  "0-1 years"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToekn}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

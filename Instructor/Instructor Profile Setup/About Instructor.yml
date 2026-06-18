@@ -1,0 +1,28 @@
+info:
+  name: About Instructor
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{baseUrl}}/instructor/about-instructor"
+  body:
+    type: json
+    data: |-
+      {
+      "city": "Kathmandu",
+      "country": "India",
+      "detailed_bio": "detailed bio",
+      "languages_spoken": ["b266cc5b-d826-495a-a388-45e0887006f2", "b0b97f44-d607-493b-aa5c-100878f62b41"],
+      "short_bio": 
+      "short bio cookies and biscuits"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToekn}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
