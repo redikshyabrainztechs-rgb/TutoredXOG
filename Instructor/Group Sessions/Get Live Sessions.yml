@@ -1,11 +1,14 @@
 info:
-  name: Update Session Basics
+  name: "Get Live Sessions "
   type: http
-  seq: 5
+  seq: 4
 
 http:
   method: GET
-  url: "{{baseUrl}}/instructor/availability"
+  url: "{{baseUrl}}/instructor/list/live-sessions/"
+  body:
+    type: json
+    data: ""
   auth:
     type: bearer
     token: "{{accessToken}}"
