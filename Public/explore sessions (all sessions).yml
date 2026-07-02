@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/public/list/sessions-cursor"
+  url: "{{baseURL}}/public/list/sessions-cursor"
   body:
     type: json
     data: ""

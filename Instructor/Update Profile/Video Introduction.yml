@@ -1,14 +1,14 @@
 info:
-  name: Video Introduction
+  name: "Video Introduction "
   type: http
-  seq: 6
+  seq: 1
 
 http:
-  method: POST
+  method: PUT
   url: "{{baseURL}}/instructor/video-intro"
   body:
     type: json
-    data: ""
+    data: '{"video_url": " generated_video_f40b20ac-71c0-452d-8eb9-42d54d3b6077.mp4 selected"}'
   auth:
     type: bearer
     token: "{{accessToken}}"

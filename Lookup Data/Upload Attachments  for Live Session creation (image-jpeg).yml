@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/aws/upload-url"
+  url: "{{baseURL}}/aws/upload-url"
   body:
     type: json
     data: |-

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/auth/register"
+  url: "{{baseURL}}/auth/register"
   body:
     type: json
     data: |+

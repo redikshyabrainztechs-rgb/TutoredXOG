@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/group/language"
+  url: "{{baseURL}}/group/language"
   auth: inherit
 
 settings:

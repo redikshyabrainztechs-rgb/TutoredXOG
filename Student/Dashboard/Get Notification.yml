@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/users/notification"
+  url: "{{baseURL}}/users/notification"
   body:
     type: json
     data: ""

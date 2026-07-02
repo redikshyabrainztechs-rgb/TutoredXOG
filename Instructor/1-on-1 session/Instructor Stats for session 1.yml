@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/instructor/instructor-stats-for-session"
+  url: "{{baseURL}}/instructor/instructor-stats-for-session"
   auth:
     type: bearer
     token: "{{accessToken}}"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/instructor/live-sessions/create-live-sessions"
+  url: "{{baseURL}}/instructor/live-sessions/create-live-sessions"
   body:
     type: json
     data: |-

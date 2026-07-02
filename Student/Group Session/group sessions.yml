@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/student/enrolled/live-sessions"
+  url: "{{baseURL}}/student/enrolled/live-sessions"
   body:
     type: json
     data: ""

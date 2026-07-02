@@ -1,11 +1,11 @@
 info:
-  name: Replace/PUT Teaching Profile
+  name: Teaching Profile
   type: http
-  seq: 4
+  seq: 3
 
 http:
   method: PUT
-  url: "{{baseUrl}}/instructor/teaching-profile"
+  url: "{{baseURL}}/instructor/teaching-profile"
   body:
     type: json
     data: |-

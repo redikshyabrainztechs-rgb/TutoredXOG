@@ -1,11 +1,11 @@
 info:
-  name: About Instructor PUT
+  name: "About Instructor "
   type: http
-  seq: 6
+  seq: 4
 
 http:
   method: PUT
-  url: "{{baseUrl}}/instructor/about-instructor"
+  url: "{{baseURL}}/instructor/about-instructor"
   body:
     type: json
     data: |-

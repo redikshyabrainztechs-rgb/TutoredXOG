@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/users/logout"
+  url: "{{baseURL}/users/logout"
   auth:
     type: bearer
     token: "{{accessToken}}"

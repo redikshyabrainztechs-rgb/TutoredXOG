@@ -1,11 +1,11 @@
 info:
-  name: Replace Basic Info
+  name: Basic Info
   type: http
   seq: 2
 
 http:
   method: PUT
-  url: "{{baseUrl}}/instructor/basic-info"
+  url: "{{baseURL}}/instructor/basic-info"
   body:
     type: json
     data: |

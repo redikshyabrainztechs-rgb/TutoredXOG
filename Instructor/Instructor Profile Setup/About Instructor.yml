@@ -1,11 +1,11 @@
 info:
   name: About Instructor
   type: http
-  seq: 5
+  seq: 3
 
 http:
   method: POST
-  url: "{{baseUrl}}/instructor/about-instructor"
+  url: "{{baseURL}}/instructor/about-instructor"
   body:
     type: json
     data: |-

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/groups/career-interview-prep/items"
+  url: "{{baseURL}}/groups/career-interview-prep/items"
   body:
     type: json
     data: ""

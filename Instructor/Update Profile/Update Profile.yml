@@ -1,0 +1,32 @@
+info:
+  name: "Update Profile "
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseURL}}/users/update"
+  body:
+    type: json
+    data: |-
+      {
+        "first_name":"REDIKSHYA",
+       "mid_name":"REDIKSHYA PHUYAL",
+       "last_name":"PHUYAL",
+       "profile_pic":"users/073bf3c2-66c8-44b1-b680-36e4e70acade/profile/15720_ram.jpg",
+       "phone":"+9779861517237",
+       "bio":"detailed bio",
+       "address":"Baneshwor",
+       "country":"Nepal",
+       "linkedin":"https://linkedin.com/in/a",
+       "website":""
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

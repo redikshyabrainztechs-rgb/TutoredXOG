@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{baseUrl}}/instructor/live-sessions/create-live-sessions"
+  url: "{{baseURL}}/instructor/live-sessions/create-live-sessions"
   body:
     type: json
     data: |-
@@ -13,17 +13,17 @@ http:
         "attachments": ["course/attachments/49721_TutoredX_API_Test_Tracker.xlsx"],
       "category_id": "74c131ff-48e0-420c-8154-80b2cfd0f262",
       "cover_image" : "course/cover/21198_pexels-diva-plavalaguna-6150527.jpg",
-      "currency" : "NPR",
+      "currency" : "apple@$%^^",
       "department" : "",
-      "description" : "Learn how to crochet keychains and flowers ",
+      "description" : "",
       "faculty": "",
       "languages" : "nepali",
-      "level" : "beginner",
-      "live_session_type": "skill-based",
+      "level" : "             " ,
+      "live_session_type": "academic",
       "max_seats": 20,
       "min_seats" : 1,
       "price" : 1000,
-      "schedules" : [{"session_title": "Session First", "date": "2026-06-30 01:00", "duration_min": "45"}],
+      "schedules" : [{"session_title": "Session First", "date": "2026-06-30 10:00", "duration_min": "45"}],
       "semester" : "",
       "tags" :  ["crochet", "fun"],
       "timezone" : "Asia/Kathmandu",

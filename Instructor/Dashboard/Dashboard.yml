@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/instructor/live-sessions/list/dashboard"
+  url: "{{baseURL}}/instructor/live-sessions/list/dashboard"
   auth:
     type: bearer
     token: "{{accessToken}}"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/instructor/get-one-on-one-details"
+  url: "{{baseURL}}/instructor/get-one-on-one-details"
   auth:
     type: bearer
     token: "{{accessToken}}"
