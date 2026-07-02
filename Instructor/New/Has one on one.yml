@@ -1,0 +1,20 @@
+info:
+  name: Has one on one
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/instructor/update/has-one-on-one"
+  body:
+    type: json
+    data: '{"status":true}'
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,17 +1,17 @@
 info:
-  name: explore sessions (all sessions)
+  name: Student List
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: GET
-  url: "{{baseURL}}/public/list/sessions-cursor"
+  url: "{{baseUrl}}/instructor/list/students"
   body:
     type: json
     data: ""
   auth:
     type: bearer
-    token: "{{accesstoken}}"
+    token: "{{accessToken}}"
 
 settings:
   encodeUrl: true

@@ -1,0 +1,25 @@
+info:
+  name: Withdrawals
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/instructor/withdrawals"
+  body:
+    type: json
+    data: |-
+      {
+      "amount":"44",
+      "notes":"Noooopppppeeee",
+      "payment_method":"bank"
+      }
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

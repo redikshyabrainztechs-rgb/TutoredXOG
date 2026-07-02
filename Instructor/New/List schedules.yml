@@ -1,0 +1,20 @@
+info:
+  name: List schedules
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{baseUrl}}/instructor/live-sessions/1df25548-95bc-4baa-a785-5a85afaf19f2/list-schedules"
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{accessToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
